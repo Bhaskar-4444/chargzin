@@ -1,143 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChargO - Peer-to-Peer EV Charging</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        .green-outline {
-            border: 2px solid #4CAF50;
-            transition: all 0.3s ease;
-        }
-        .green-outline:hover {
-            background-color: #4CAF50;
-            color: white;
-        }
-        .hero-bg {
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/random/1600x900/?electric-vehicle');
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chargzin - Peer-to-Peer EV Charging Marketplace</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .hero-bg {
+      background: linear-gradient(135deg, #1e3a8a, #10b981);
+    }
+  </style>
 </head>
 <body class="bg-gray-100">
-    <!-- Header -->
-    <header class="bg-white shadow-md">
-        <nav class="container mx-auto flex items-center justify-between py-4 px-6">
-            <div class="text-2xl font-bold text-green-600">ChargO</div>
-            <ul class="flex space-x-6">
-                <li><a href="#home" class="text-gray-700 hover:text-green-600">Home</a></li>
-                <li><a href="#list" class="text-gray-700 hover:text-green-600">List Your Charger</a></li>
-                <li><a href="#find" class="text-gray-700 hover:text-green-600">Find a Charger</a></li>
-                <li><a href="#about" class="text-gray-700 hover:text-green-600">About</a></li>
-                <li><a href="#contact" class="text-gray-700 hover:text-green-600">Contact</a></li>
-            </ul>
-            <div>
-                <a href="#login" class="text-green-600 mr-4 hover:underline">Login</a>
-                <a href="#signup" class="bg-green-600 text-white px-4 py-2 rounded green-outline hover:bg-green-700">Sign Up</a>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero-bg h-96 flex items-center justify-center text-center text-white">
-        <div>
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Charge Your EV, Anywhere, Anytime</h1>
-            <p class="text-lg md:text-xl mb-6">Join ChargO's peer-to-peer network to share or find EV chargers in your community.</p>
-            <a href="#find" class="bg-green-600 text-white px-6 py-3 rounded green-outline hover:bg-green-700">Find a Charger Now</a>
+  <!-- Navbar -->
+  <nav class="bg-white shadow-lg fixed w-full z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <h1 class="text-2xl font-bold text-green-600">Chargzin</h1>
         </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="container mx-auto py-12 px-6">
-        <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Why Choose ChargO?</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                <h3 class="text-xl font-semibold text-green-600 mb-2">List Your Charger</h3>
-                <p class="text-gray-600">Earn passive income by sharing your EV charger or parking space with others.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                <h3 class="text-xl font-semibold text-green-600 mb-2">Find Nearby Chargers</h3>
-                <p class="text-gray-600">Locate available chargers with real-time maps and book instantly.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                <h3 class="text-xl font-semibold text-green-600 mb-2">Eco-Friendly Charging</h3>
-                <p class="text-gray-600">Support sustainability with community-driven, green energy solutions.</p>
-            </div>
+        <div class="flex items-center space-x-4">
+          <a href="#home" class="text-gray-700 hover:text-green-600">Home</a>
+          <a href="#about" class="text-gray-700 hover:text-green-600">About</a>
+          <a href="#how-it-works" class="text-gray-700 hover:text-green-600">How It Works</a>
+          <a href="#join" class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700">Join Now</a>
         </div>
-    </section>
+      </div>
+    </div>
+  </nav>
 
-    <!-- List Your Charger Section -->
-    <section id="list" class="bg-gray-50 py-12 px-6">
-        <div class="container mx-auto flex flex-col md:flex-row items-center">
-            <div class="md:w-1/2 mb-6 md:mb-0">
-                <h2 class="text-3xl font-bold text-gray-800 mb-4">List Your Charger or Space</h2>
-                <p class="text-gray-600 mb-6">Have an EV charger or a parking spot? List it on ChargO to earn money while supporting EV drivers. Set your price per kWh or session and control availability.</p>
-                <a href="#signup" class="bg-green-600 text-white px-6 py-3 rounded green-outline hover:bg-green-700">Get Started</a>
-            </div>
-            <div class="md:w-1/2">
-                <img src="https://source.unsplash.com/random/600x400/?ev-charger" alt="EV Charger" class="rounded-lg shadow-md">
-            </div>
+  <!-- Hero Section -->
+  <section id="home" class="hero-bg text-white pt-24 pb-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">Powering India's EV Future</h2>
+      <p class="text-lg md:text-xl mb-8">Chargzin connects EV owners with nearby private charging points for seamless, affordable charging.</p>
+      <a href="#join" class="bg-white text-green-600 px-6 py-3 rounded-md font-semibold hover:bg-gray-200">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Problem Section -->
+  <section id="about" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">The Problem</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <h3 class="text-xl font-semibold text-gray-700 mb-2">Limited Infrastructure</h3>
+          <p class="text-gray-600">India’s EV adoption is growing, but charging stations are scarce and centralized.</p>
         </div>
-    </section>
+        <div class="text-center">
+          <h3 class="text-xl font-semibold text-gray-700 mb-2">Range Anxiety</h3>
+          <p class="text-gray-600">EV users worry about running out of charge with limited access to chargers.</p>
+        </div>
+        <div class="text-center">
+          <h3 class="text-xl font-semibold text-gray-700 mb-2">High Costs</h3>
+          <p class="text-gray-600">Building large-scale public charging networks is expensive and slow.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Find a Charger Section -->
-    <section id="find" class="container mx-auto py-12 px-6">
-        <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Find a Charger Near You</h2>
+  <!-- Solution Section -->
+  <section class="py-16 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">The Solution: Chargzin</h2>
+      <p class="text-lg text-gray-600 mb-8 text-center">A community-powered platform where anyone can rent out their EV charger, creating a decentralized, affordable, and scalable charging network.</p>
+      <div class="grid md:grid-cols-2 gap-8">
         <div class="bg-white p-6 rounded-lg shadow-md">
-            <div id="map" class="h-96 w-full rounded-lg" style="background: #e0e0e0;">
-                <!-- Placeholder for Google Maps or similar API integration -->
-                <p class="text-center pt-40 text-gray-600">Map integration coming soon...</p>
-            </div>
-            <div class="mt-6 text-center">
-                <input type="text" placeholder="Enter your location" class="border border-gray-300 rounded px-4 py-2 w-64 green-outline">
-                <button class="bg-green-600 text-white px-6 py-2 rounded green-outline hover:bg-green-700 ml-2">Search</button>
-            </div>
+          <h3 class="text-xl font-semibold text-gray-700 mb-2">For EV Owners</h3>
+          <p class="text-gray-600">Find nearby charging points, book instantly, and pay securely through the Chargzin app or website.</p>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="bg-gray-50 py-12 px-6">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold text-gray-800 mb-4">About ChargO</h2>
-            <p class="text-gray-600 max-w-2xl mx-auto">ChargO is a peer-to-peer platform connecting EV drivers with charger hosts to create a sustainable, community-driven charging network. Our mission is to make EV charging accessible, affordable, and eco-friendly for everyone.</p>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold text-gray-700 mb-2">For Hosts</h3>
+          <p class="text-gray-600">List your charger and earn passive income by providing charging access to EV users.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8 px-6">
-        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
-            <div class="mb-4 md:mb-0">
-                <h3 class="text-xl font-bold">ChargO</h3>
-                <p class="text-gray-400">Powering the future of electric mobility.</p>
-            </div>
-            <ul class="flex space-x-6">
-                <li><a href="#privacy" class="text-gray-400 hover:text-green-600">Privacy Policy</a></li>
-                <li><a href="#terms" class="text-gray-400 hover:text-green-600">Terms of Service</a></li>
-                <li><a href="#contact" class="text-gray-400 hover:text-green-600">Contact Us</a></li>
-            </ul>
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">How It Works</h2>
+      <div class="space-y-8">
+        <div class="flex items-center">
+          <div class="flex-shrink-0 bg-green-600 text-white rounded-full h-12 w-12 flex items-center justify-center">1</div>
+          <div class="ml-4">
+            <h3 class="text-xl font-semibold text-gray-700">Find a Charging Station</h3>
+            <p class="text-gray-600">Search for nearby private charging points on the Chargzin platform.</p>
+          </div>
         </div>
-    </footer>
+        <div class="flex items-center">
+          <div class="flex-shrink-0 bg-green-600 text-white rounded-full h-12 w-12 flex items-center justify-center">2</div>
+          <div class="ml-4">
+            <h3 class="text-xl font-semibold text-gray-700">Instant Booking & Payment</h3>
+            <p class="text-gray-600">Book a slot and pay seamlessly through our secure digital platform.</p>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <div class="flex-shrink-0 bg-green-600 text-white rounded-full h-12 w-12 flex items-center justify-center">3</div>
+          <div class="ml-4">
+            <h3 class="text-xl font-semibold text-gray-700">Plug & Charge</h3>
+            <p class="text-gray-600">Access the charger, plug in, and charge your EV with ease.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script>
-        // Placeholder for map initialization (e.g., Google Maps API)
-        function initMap() {
-            console.log("Map initialization placeholder. Replace with Google Maps API or similar.");
-        }
+  <!-- Call to Action -->
+  <section id="join" class="py-16 bg-green-600 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold mb-6">Join the Chargzin Community</h2>
+      <p class="text-lg mb-8">Be a part of India’s decentralized EV charging revolution. Sign up as a host or user today!</p>
+      <a href="#" class="bg-white text-green-600 px-6 py-3 rounded-md font-semibold hover:bg-gray-200">Sign Up Now</a>
+    </div>
+  </section>
 
-        // Basic interactivity for search button
-        document.querySelector('button').addEventListener('click', () => {
-            const location = document.querySelector('input').value;
-            if (location) {
-                alert(`Searching for chargers near: ${location}`);
-            } else {
-                alert("Please enter a location.");
-            }
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Chargzin</h3>
+          <p class="text-gray-400">Empowering India’s EV future with a decentralized charging network.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#home" class="text-gray-400 hover:text-white">Home</a></li>
+            <li><a href="#about" class="text-gray-400 hover:text-white">About</a></li>
+            <li><a href="#how-it-works" class="text-gray-400 hover:text-white">How It Works</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Contact</h3>
+          <p class="text-gray-400">Email: support@chargzin.com</p>
+          <p class="text-gray-400">Phone: +91 123-456-7890</p>
+        </div>
+      </div>
+      <div class="mt-8 text-center text-gray-400">
+        <p>&copy; 2025 Chargzin. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
         });
-    </script>
+      });
+    });
+  </script>
 </body>
 </html>
