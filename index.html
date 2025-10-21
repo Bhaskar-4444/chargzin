@@ -1,220 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chargzin - Powering EVs, Empowering People</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-    }
-    .hero-bg {
-      background: linear-gradient(135deg, #e6f3e6, #d4e4d4);
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OneServiice | Home Services in Delhi</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100">
-  <!-- Navbar -->
-  <nav class="bg-white shadow-lg fixed w-full z-10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between h-16">
-        <div class="flex items-center">
-          <h1 class="text-2xl font-bold text-green-700">Chargzin</h1>
-        </div>
-        <div class="flex items-center space-x-4">
-          <a href="#home" class="text-gray-700 hover:text-green-600">Home</a>
-          <a href="#about" class="text-gray-700 hover:text-green-600">About</a>
-          <a href="#features" class="text-gray-700 hover:text-green-600">Features</a>
-          <a href="#how-it-works" class="text-gray-700 hover:text-green-600">How It Works</a>
-          <a href="#blog" class="text-gray-700 hover:text-green-600">Blog</a>
-          <a href="#join" class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700">Get Started</a>
-        </div>
-      </div>
-    </div>
-  </nav>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero-bg text-center py-24 px-4">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-4xl md:text-5xl font-bold text-green-700 mb-4">Powering EVs, Empowering People</h2>
-      <p class="text-lg md:text-xl mb-8 text-gray-700">A peer-to-peer EV charging marketplace where anyone can list their charger, Charging Points, users find charging points easily, and hosts earn passive income.</p>
-      <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
-        <a href="#find-station" class="bg-green-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700">Find a Charging Station</a>
-        <a href="#become-host" class="bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600">Become a Host/List as charging point</a>
-        <a href="#register-charger" class="bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600">Rent Your Charger</a>
-      </div>
-    </div>
-  </section>
+  <div class="container mx-auto mt-10 p-6 bg-white rounded-xl shadow-lg">
+    <h1 class="text-3xl font-bold text-center text-blue-600 mb-6">OneServiice</h1>
 
-  <!-- Problem Section -->
-  <section id="about" class="py-16 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">The Problem</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="text-center">
-          <h3 class="text-xl font-semibold text-gray-700 mb-2">Limited Infrastructure</h3>
-          <p class="text-gray-600">India’s EV adoption is growing, but charging stations are scarce and centralized.</p>
-        </div>
-        <div class="text-center">
-          <h3 class="text-xl font-semibold text-gray-700 mb-2">Range Anxiety</h3>
-          <p class="text-gray-600">EV users worry about running out of charge with limited access to chargers.</p>
-        </div>
-        <div class="text-center">
-          <h3 class="text-xl font-semibold text-gray-700 mb-2">High Costs</h3>
-          <p class="text-gray-600">Building large-scale public charging networks is expensive and slow.</p>
-        </div>
-      </div>
+    <!-- Signup Form -->
+    <div id="signup-section" class="mb-6">
+      <h2 class="text-xl font-semibold mb-2">Sign Up</h2>
+      <input id="signupEmail" type="email" placeholder="Email" class="border p-2 w-full mb-2">
+      <input id="signupPassword" type="password" placeholder="Password" class="border p-2 w-full mb-2">
+      <button id="signupBtn" class="bg-blue-600 text-white px-4 py-2 rounded">Sign Up</button>
     </div>
-  </section>
 
-  <!-- Solution Section -->
-  <section class="py-16 bg-gray-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">The Solution: Chargzin</h2>
-      <p class="text-lg text-gray-600 mb-8 text-center">A platform where anyone can list their charging point, EV users find convenient charging options, and hosts earn passive income by renting out their chargers.</p>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold text-gray-700 mb-2">For EV Owners</h3>
-          <p class="text-gray-600">Easily discover and book nearby charging points, ensuring a hassle-free charging experience.</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold text-gray-700 mb-2">For Hosts</h3>
-          <p class="text-gray-600">List your charger on Chargzin, provide access to EV users, and earn passive income effortlessly.</p>
-        </div>
-      </div>
+    <!-- Login Form -->
+    <div id="login-section" class="mb-6">
+      <h2 class="text-xl font-semibold mb-2">Login</h2>
+      <input id="loginEmail" type="email" placeholder="Email" class="border p-2 w-full mb-2">
+      <input id="loginPassword" type="password" placeholder="Password" class="border p-2 w-full mb-2">
+      <button id="loginBtn" class="bg-green-600 text-white px-4 py-2 rounded">Login</button>
     </div>
-  </section>
 
-  <!-- Features Section -->
-  <section id="features" class="py-16 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Why Chargzin?</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="text-center">
-          <div class="flex justify-center mb-4">
-            <span class="text-green-600 text-4xl">📍</span>
-          </div>
-          <h3 class="text-xl font-semibold text-gray-700 mb-2">Decentralized Network</h3>
-          <p class="text-gray-600">Anyone can list their charger, creating a vast network of accessible charging points.</p>
-        </div>
-        <div class="text-center">
-          <div class="flex justify-center mb-4">
-            <span class="text-green-600 text-4xl">💳</span>
-          </div>
-          <h3 class="text-xl font-semibold text-gray-700 mb-2">Secure & Seamless</h3>
-          <p class="text-gray-600">Instant bookings and payments with robust security for both users and hosts.</p>
-        </div>
-        <div class="text-center">
-          <div class="flex justify-center mb-4">
-            <span class="text-green-600 text-4xl">🌱</span>
-          </div>
-          <h3 class="text-xl font-semibold text-gray-700 mb-2">Passive Income</h3>
-          <p class="text-gray-600">Hosts earn steady income by sharing their chargers with the community.</p>
-        </div>
-      </div>
+    <!-- Booking Form -->
+    <div id="booking-section" class="hidden">
+      <h2 class="text-xl font-semibold mb-2">Book a Service</h2>
+      <input id="serviceName" type="text" placeholder="Service Name (e.g., Electrician)" class="border p-2 w-full mb-2">
+      <input id="location" type="text" placeholder="Location (e.g., Rohini Sec 15)" class="border p-2 w-full mb-2">
+      <input id="date" type="date" class="border p-2 w-full mb-2">
+      <input id="time" type="time" class="border p-2 w-full mb-2">
+      <button id="bookBtn" class="bg-purple-600 text-white px-4 py-2 rounded">Book Now</button>
     </div>
-  </section>
 
-  <!-- How It Works Section -->
-  <section id="how-it-works" class="py-16 bg-gray-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold text-green-700 text-center mb-10">How It Works</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-white p-6 rounded-lg shadow-md text-center">
-          <div class="flex justify-center mb-4">
-            <span class="text-green-600 text-4xl">📍</span>
-          </div>
-          <h3 class="text-xl font-semibold mb-2">Discover Stations</h3>
-          <p class="text-gray-600">EV drivers can easily find available charging points listed by hosts near them.</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-md text-center">
-          <div class="flex justify-center mb-4">
-            <span class="text-green-600 text-4xl">💳</span>
-          </div>
-          <h3 class="text-xl font-semibold mb-2">Plug & Pay</h3>
-          <p class="text-gray-600">Hassle-free experience — plug in, confirm, and pay instantly for the charge.</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-md text-center">
-          <div class="flex justify-center mb-4">
-            <span class="text-green-600 text-4xl">🌱</span>
-          </div>
-          <h3 class="text-xl font-semibold mb-2">Earn Passive Income</h3>
-          <p class="text-gray-600">Hosts list their chargers and earn income as users book their stations.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    <p id="statusMsg" class="text-center text-gray-700 mt-4"></p>
+  </div>
 
-  <!-- Blog Section -->
-  <section id="blog" class="py-16 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Blog</h2>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold text-gray-700 mb-2">The Rise of EV Adoption in India</h3>
-          <p class="text-gray-600 mb-4">Published on September 05, 2025 - Explore how Chargzin is supporting India's shift to electric vehicles with community-driven solutions.</p>
-          <a href="#" class="text-green-600 hover:text-green-700">Read More</a>
-        </div>
-        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold text-gray-700 mb-2">How to Become a Charger Host</h3>
-          <p class="text-gray-600 mb-4">Published on September 03, 2025 - Learn the simple steps to list your charger on Chargzin and start earning passive income.</p>
-          <a href="#" class="text-green-600 hover:text-green-700">Read More</a>
-        </div>
-        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold text-gray-700 mb-2">Benefits of Decentralized Charging</h3>
-          <p class="text-gray-600 mb-4">Published on August 30, 2025 - Discover how decentralized charging networks are shaping the future of clean mobility.</p>
-          <a href="#" class="text-green-600 hover:text-green-700">Read More</a>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- Firebase SDK -->
+  <script type="module">
+    // Import Firebase modules
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged } 
+      from "https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js";
+    import { getDatabase, ref, set, push } 
+      from "https://www.gstatic.com/firebasejs/10.13.0/firebase-database.js";
 
-  <!-- Testimonials Section -->
-  <section class="py-16 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">What Our Users Say</h2>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-          <p class="text-gray-600 italic mb-4">"Chargzin made charging my EV so easy! I found a charger right in my neighborhood and booked it in seconds."</p>
-          <p class="text-gray-800 font-semibold">Priya Sharma, EV Owner</p>
-        </div>
-        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-          <p class="text-gray-600 italic mb-4">"Listing my charger on Chargzin has been a game-changer. I’m earning extra income while helping the environment."</p>
-          <p class="text-gray-800 font-semibold">Ravi Patel, Charger Host</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    // ✅ Your Firebase Config
+    const firebaseConfig = {
+      apiKey: "AIzaSyAOO9_ql_cl5r3pIT-ljWKMwIzeTAPHZiM",
+      authDomain: "oneserviice-cceb7.firebaseapp.com",
+      databaseURL: "https://oneserviice-cceb7-default-rtdb.firebaseio.com",
+      projectId: "oneserviice-cceb7",
+      storageBucket: "oneserviice-cceb7.firebasestorage.app",
+      messagingSenderId: "784214000337",
+      appId: "1:784214000337:web:0ace63723d190a2199fbf0",
+      measurementId: "G-SEYP1SPXYW"
+    };
 
-  <!-- Call to Action -->
-  <section id="join" class="py-16 bg-green-100 text-center">
-    <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-green-700 mb-4">Join the Green Revolution</h2>
-      <p class="text-lg text-gray-700 mb-6">Whether you're an EV driver looking for a charger or a host wanting to earn passive income, Chargzin is your solution.</p>
-      <a href="#get-started" class="bg-green-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700">Get Started</a>
-    </div>
-  </section>
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth();
+    const db = getDatabase(app);
 
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-8 px-4">
-    <div class="max-w-7xl mx-auto text-center">
-      <p>&copy; 2025 Chargzin. All rights reserved.</p>
-      <p class="mt-2">Contact: support@chargzin.com | Phone: +91 123-456-7890</p>
-    </div>
-  </footer>
+    const signupBtn = document.getElementById('signupBtn');
+    const loginBtn = document.getElementById('loginBtn');
+    const bookBtn = document.getElementById('bookBtn');
+    const bookingSection = document.getElementById('booking-section');
+    const statusMsg = document.getElementById('statusMsg');
 
-  <script>
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
+    // ✨ SIGNUP
+    signupBtn.addEventListener('click', async () => {
+      const email = signupEmail.value;
+      const password = signupPassword.value;
+      try {
+        await createUserWithEmailAndPassword(auth, email, password);
+        statusMsg.textContent = "Signup Successful! Please login.";
+      } catch (error) {
+        statusMsg.textContent = "Error: " + error.message;
+      }
+    });
+
+    // ✨ LOGIN
+    loginBtn.addEventListener('click', async () => {
+      const email = loginEmail.value;
+      const password = loginPassword.value;
+      try {
+        await signInWithEmailAndPassword(auth, email, password);
+        statusMsg.textContent = "Login Successful!";
+      } catch (error) {
+        statusMsg.textContent = "Error: " + error.message;
+      }
+    });
+
+    // ✨ CHECK LOGIN STATUS
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        bookingSection.classList.remove('hidden');
+        statusMsg.textContent = `Welcome, ${user.email}`;
+      } else {
+        bookingSection.classList.add('hidden');
+      }
+    });
+
+    // ✨ SAVE BOOKING TO DATABASE
+    bookBtn.addEventListener('click', async () => {
+      const user = auth.currentUser;
+      if (!user) return alert("Please login first!");
+
+      const bookingRef = push(ref(db, `bookings/${user.uid}`));
+      await set(bookingRef, {
+        id: bookingRef.key,
+        serviceName: serviceName.value,
+        location: location.value,
+        date: date.value,
+        time: time.value,
+        status: "Pending",
+        timestamp: Date.now()
       });
+
+      statusMsg.textContent = "✅ Booking Confirmed!";
     });
   </script>
+
 </body>
 </html>
